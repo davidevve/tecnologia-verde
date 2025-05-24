@@ -1,0 +1,97 @@
+/* Estilos específicos para o Quiz Ambiental - Isolados para não afetar o resto do site */
+#quiz-ambiental .calculator-container,
+#quiz-ambiental .quiz-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#quiz-ambiental .question-section {
+    margin-bottom: 20px;
+}
+
+#quiz-ambiental .question-count {
+    font-size: 1.1em;
+    color: #2f9e41; /* IFSULDEMINAS Green */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#quiz-ambiental .question-text {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+#quiz-ambiental .answer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#quiz-ambiental .btn-answer {
+    background-color: #ffffff;
+    border: 2px solid #2f9e41; /* IFSULDEMINAS Green */
+    border-radius: 5px;
+    padding: 12px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+#quiz-ambiental .btn-answer:hover {
+    background-color: #e9f5e9;
+    transform: translateY(-2px);
+}
+
+#quiz-ambiental .score-section {
+    text-align: center;
+    padding: 20px;
+}
+
+#quiz-ambiental .score-section h3 {
+    color: #2f9e41; /* IFSULDEMINAS Green */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+#quiz-ambiental .score-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#quiz-ambiental .btn {
+    display: inline-block;
+    background: #2f9e41; /* IFSULDEMINAS Green */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+}
+
+#quiz-ambiental .btn:hover {
+    background: #cd191e; /* IFSULDEMINAS Red */
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    #quiz-ambiental .calculator-container,
+    #quiz-ambiental .quiz-container {
+        padding: 15px;
+    }
+    
+    #quiz-ambiental .question-text {
+        font-size: 1.1em;
+    }
+    
+    #quiz-ambiental .btn-answer {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,463 @@
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+header {
+    background: #005000; /* Verde escuro IFSuldeMinas (suposição) */
+    color: #fff;
+    padding-top: 20px;
+    min-height: 100px; /* Aumentado de 70px para 100px */
+    border-bottom: #003300 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header .logo {
+    float: left;
+    margin-top: 0px; /* Removida a margem negativa para evitar corte */
+    padding-bottom: 10px; /* Adicionado padding inferior para dar mais espaço */
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header nav ul li a:hover {
+    color: #a9d1a9; /* Verde claro para hover */
+}
+
+/* Banner */
+.banner {
+    min-height: 400px;
+    background: url('../images/banner_principal.jpg') no-repeat 0 -200px; /* Imagem de banner principal */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.banner p {
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+/* Introdução */
+.introducao {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.introducao h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #005000;
+}
+
+.introducao p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Cards de Destaque */
+.cards-destaque {
+    padding: 40px 0;
+    background-color: #e9e9e9; 
+    text-align: center;
+}
+
+.cards-destaque h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #005000;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 15px;
+    padding: 20px;
+    width: calc(33.333% - 40px); /* 3 cards por linha, com margem */
+    min-width: 280px; /* Para telas menores */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card img.icon {
+    width: 60px; /* Ajustar conforme o ícone */
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #005000;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.card a.btn-saiba-mais {
+    display: inline-block;
+    background-color: #007000; /* Verde um pouco mais claro */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card a.btn-saiba-mais:hover {
+    background-color: #005000;
+}
+
+/* Chamada Visual - Contador */
+.chamada-visual {
+    padding: 50px 0;
+    background-color: #005000; /* Mesmo verde do header */
+    color: #fff;
+    text-align: center;
+}
+
+.chamada-visual h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.contador-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contador-numero {
+    font-size: 4em;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.contador-texto {
+    font-size: 1.2em;
+    max-width: 300px;
+    text-align: left;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #a9d1a9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para outras páginas (a serem desenvolvidos) */
+.secao-conteudo {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.secao-conteudo h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #005000;
+}
+
+.secao-conteudo .container > p, .secao-conteudo .container > ul {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    header .logo,
+    header nav {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .banner h1 {
+        font-size: 2.5em;
+    }
+
+    .banner p {
+        font-size: 1.2em;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 400px; /* Limite para não ficar muito largo em telas médias */
+        margin: 15px 0;
+    }
+}
+
+
+
+
+/* Estilos Calculadora de Carbono */
+.calculadora-carbono {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.calculadora-carbono h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #005000;
+}
+
+#carbonCalculatorForm .form-group {
+    margin-bottom: 20px;
+}
+
+#carbonCalculatorForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+#carbonCalculatorForm input[type="number"],
+#carbonCalculatorForm select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#carbonCalculatorForm .btn-calcular {
+    display: block;
+    width: auto;
+    margin: 20px auto 0 auto;
+    background-color: #007000;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#carbonCalculatorForm .btn-calcular:hover {
+    background-color: #005000;
+}
+
+.resultado-calculadora {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e9f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.resultado-calculadora p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.resultado-calculadora strong {
+    color: #005000;
+    font-size: 1.2em;
+}
+
+.resultado-calculadora small {
+    font-size: 0.9em;
+    color: #555;
+    display: block;
+    margin-top: 15px;
+}
+
+
+
+
+/* Estilos Abas Navegáveis */
+nav .tab-link.active-tab {
+    color: #a9d1a9; /* Verde claro para aba ativa, igual ao hover */
+    font-weight: bold;
+    border-bottom: 2px solid #a9d1a9;
+}
+
+.tab-content {
+    display: none; /* Oculta todas as abas por padrão */
+    padding: 20px 0; /* Adiciona algum padding interno para o conteúdo da aba */
+    animation: fadeInTab 0.5s ease-in-out;
+}
+
+.tab-content.active-content {
+    display: block; /* Exibe apenas a aba ativa */
+}
+
+#tab-content-wrapper {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes fadeInTab {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ajuste para o conteúdo da seção dentro das abas */
+.tab-content .secao-conteudo h2 {
+    margin-top: 0; /* Remove margem superior extra se a seção já tem padding */
+}
+
+
+/* Estilos para o feedback do quiz */
+.feedback-section {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.feedback-correct {
+    background-color: rgba(76, 175, 80, 0.2);
+    border: 2px solid #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.feedback-incorrect {
+    background-color: rgba(244, 67, 54, 0.2);
+    border: 2px solid #F44336;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.wrong-answer {
+    color: #F44336;
+    font-weight: bold;
+}
+
+.correct-answer {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.btn-next {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-next:hover {
+    background-color: #0b7dda;
+}
+
+.selected-correct {
+    background-color: #4CAF50 !important;
+    color: white !important;
+}
+
+.selected-incorrect {
+    background-color: #F44336 !important;
+    color: white !important;
+}
+
+.correct-answer-highlight {
+    background-color: rgba(76, 175, 80, 0.5) !important;
+    border: 2px solid #4CAF50 !important;
+}

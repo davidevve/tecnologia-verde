@@ -1,0 +1,78 @@
+/* Estilos para o Quiz Ambiental */
+.quiz-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.question-section {
+    margin-bottom: 20px;
+}
+
+.question-count {
+    font-size: 1.1em;
+    color: #005000;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.question-text {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.answer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-answer {
+    background-color: #ffffff;
+    border: 2px solid #007000;
+    border-radius: 5px;
+    padding: 12px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.btn-answer:hover {
+    background-color: #e9f5e9;
+    transform: translateY(-2px);
+}
+
+.score-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.score-section h3 {
+    color: #005000;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.score-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Responsividade */
+@media(max-width: 768px) {
+    .quiz-container {
+        padding: 15px;
+    }
+    
+    .question-text {
+        font-size: 1.1em;
+    }
+    
+    .btn-answer {
+        padding: 10px;
+    }
+}
