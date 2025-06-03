@@ -1,4 +1,3 @@
 # tecnologia-verde
 ## IFSULDEMINAS campus Machado
-https://ytnphrko.manus.space/#inicio
-https://kznvcvoc.manus.space/
+https://cusguqzj.manus.space/#inicio
